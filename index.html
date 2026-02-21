@@ -1,90 +1,165 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Contact & Payment</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      text-align: center;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propastin Style SMM</title>
 
-    .container {
-      padding: 40px 20px;
-      max-width: 500px;
-      margin: auto;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    h1 {
-      margin-bottom: 10px;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 
-    p {
-      color: #ddd;
-    }
+body{
+background:linear-gradient(135deg,#0f172a,#020617);
+color:white;
+}
 
-    .card {
-      background: rgba(255,255,255,0.1);
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 25px;
-    }
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 12px 25px;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
-    }
+.logo{
+font-size:22px;
+font-weight:700;
+color:#22c55e;
+}
 
-    .btn-secondary {
-      background: #f39c12;
-    }
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
+}
 
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #aaa;
-    }
+.btn{
+background:#22c55e;
+padding:10px 20px;
+border-radius:5px;
+color:white;
+text-decoration:none;
+}
 
-  </style>
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero p{
+color:#94a3b8;
+margin-bottom:30px;
+}
+
+.section-title{
+text-align:center;
+font-size:28px;
+margin-top:60px;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+padding:50px 8%;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+width:280px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#334155;
+}
+
+.price{
+font-size:24px;
+margin:15px 0;
+color:#22c55e;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+margin-top:60px;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+.services{flex-direction:column;align-items:center}
+.hero h1{font-size:28px}
+}
+</style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Contact & Payment</h1>
-    <p>Secure and fast support available 24/7</p>
+<header>
+<div class="logo">SMM Premium</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Login</a>
+<a class="btn" href="https://wa.me/916232773902" target="_blank">Register</a>
+</nav>
+</header>
 
-    <!-- WhatsApp Contact -->
-    <div class="card">
-      <h2>Contact on WhatsApp</h2>
-      <p>Click below to chat directly with us.</p>
-      <a class="btn" href="https://wa.me/916232773902?text=Hello,%20I%20want%20payment%20details." target="_blank">
-        Chat on WhatsApp
-      </a>
-    </div>
+<section class="hero">
+<h1>O Melhor Painel SMM do Brasil</h1>
+<p>Entrega rápida • Preços baixos • Suporte 24h</p>
+<a class="btn" href="https://wa.me/916232773902?text=Quero%20informações%20sobre%20o%20painel" target="_blank">
+Começar Agora
+</a>
+</section>
 
-    <!-- Payment Info -->
-    <div class="card">
-      <h2>Payment Instructions</h2>
-      <p>We provide secure payment details after contact confirmation.</p>
-      <p>Please message us on WhatsApp to receive payment options.</p>
-      <a class="btn btn-secondary" href="https://wa.me/916232773902?text=Send%20me%20payment%20details." target="_blank">
-        Get Payment Details
-      </a>
-    </div>
+<h2 class="section-title">Nossos Serviços</h2>
 
-    <div class="footer">
-      © 2026 All Rights Reserved
-    </div>
-  </div>
+<section class="services">
+
+<div class="card">
+<h3>Votos em Enquete</h3>
+<p>Alta qualidade garantida</p>
+<div class="price">$10 / 100</div>
+<a class="btn" href="https://wa.me/916232773902?text=Quero%20100%20votos">Comprar</a>
+</div>
+
+<div class="card">
+<h3>Seguidores</h3>
+<p>Crescimento orgânico</p>
+<div class="price">A partir de $5</div>
+<a class="btn" href="https://wa.me/916232773902?text=Quero%20comprar%20seguidores">Comprar</a>
+</div>
+
+<div class="card">
+<h3>Curtidas</h3>
+<p>Engajamento real</p>
+<div class="price">A partir de $3</div>
+<a class="btn" href="https://wa.me/916232773902?text=Quero%20comprar%20curtidas">Comprar</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 SMM Premium - Todos os direitos reservados
+</footer>
 
 </body>
 </html>
