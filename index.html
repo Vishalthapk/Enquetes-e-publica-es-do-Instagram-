@@ -1,165 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Propastin Style SMM</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+<title>SMM Premium Panel</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 
 body{
-background:linear-gradient(135deg,#0f172a,#020617);
+margin:0;
+font-family:Arial, sans-serif;
+background:#0f172a;
 color:white;
 }
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:rgba(0,0,0,0.3);
-backdrop-filter:blur(10px);
-}
-
-.logo{
-font-size:22px;
-font-weight:700;
-color:#22c55e;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-size:14px;
-}
-
-.btn{
-background:#22c55e;
-padding:10px 20px;
-border-radius:5px;
-color:white;
-text-decoration:none;
-}
-
-.hero{
+background:#111827;
+padding:20px;
 text-align:center;
-padding:100px 20px;
+font-size:24px;
+font-weight:bold;
 }
 
-.hero h1{
-font-size:40px;
-margin-bottom:20px;
-}
-
-.hero p{
-color:#94a3b8;
-margin-bottom:30px;
-}
-
-.section-title{
-text-align:center;
-font-size:28px;
-margin-top:60px;
-}
-
-.services{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-padding:50px 8%;
+.container{
+padding:20px;
+max-width:1000px;
+margin:auto;
 }
 
 .card{
 background:#1e293b;
-padding:30px;
-width:280px;
-border-radius:15px;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+h2{
+margin-top:0;
+}
+
+select, input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:none;
+border-radius:6px;
+}
+
+button{
+background:#22c55e;
+color:white;
+border:none;
+padding:12px;
+border-radius:8px;
+cursor:pointer;
+width:100%;
+font-size:16px;
+}
+
+button:hover{
+background:#16a34a;
+}
+
+.price-box{
+background:#0ea5e9;
+padding:10px;
+border-radius:8px;
 text-align:center;
-transition:0.3s;
+margin-bottom:15px;
 }
 
-.card:hover{
-transform:translateY(-10px);
-background:#334155;
+.wallet-box{
+background:#111827;
+padding:15px;
+border-radius:8px;
+word-break:break-all;
 }
 
-.price{
-font-size:24px;
-margin:15px 0;
-color:#22c55e;
-}
-
-footer{
+.footer{
 text-align:center;
-padding:30px;
-background:#0f172a;
-margin-top:60px;
-color:#94a3b8;
+padding:20px;
+font-size:14px;
+color:#9ca3af;
 }
 
-@media(max-width:768px){
-.services{flex-direction:column;align-items:center}
-.hero h1{font-size:28px}
-}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="logo">SMM Premium</div>
-<nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Login</a>
-<a class="btn" href="https://wa.me/916232773902" target="_blank">Register</a>
-</nav>
+SMM Premium - Instagram Panel
 </header>
 
-<section class="hero">
-<h1>O Melhor Painel SMM do Brasil</h1>
-<p>Entrega rápida • Preços baixos • Suporte 24h</p>
-<a class="btn" href="https://wa.me/916232773902?text=Quero%20informações%20sobre%20o%20painel" target="_blank">
-Começar Agora
-</a>
-</section>
-
-<h2 class="section-title">Nossos Serviços</h2>
-
-<section class="services">
+<div class="container">
 
 <div class="card">
-<h3>Votos em Enquete</h3>
-<p>Alta qualidade garantida</p>
-<div class="price">$10 / 100</div>
-<a class="btn" href="https://wa.me/916232773902?text=Quero%20100%20votos">Comprar</a>
+<h2>Serviços Instagram</h2>
+
+<div class="price-box">
+100 Votos = 10 Dólares
+</div>
+
+<label>Escolha o Serviço</label>
+<select>
+<option>Instagram Story Votes</option>
+<option>Instagram Post Votes</option>
+</select>
+
+<label>Quantidade (100 - 2000)</label>
+<select>
+<option>100</option>
+<option>200</option>
+<option>500</option>
+<option>1000</option>
+<option>1500</option>
+<option>2000</option>
+</select>
+
+<label>Link do Post / Story</label>
+<input type="text" placeholder="Cole o link aqui">
+
+<button onclick="order()">Fazer Pedido</button>
+
 </div>
 
 <div class="card">
-<h3>Seguidores</h3>
-<p>Crescimento orgânico</p>
-<div class="price">A partir de $5</div>
-<a class="btn" href="https://wa.me/916232773902?text=Quero%20comprar%20seguidores">Comprar</a>
+<h2>Wallet & Pagamento</h2>
+
+<p>Envie USDT (TRC20) para este endereço Binance:</p>
+
+<div class="wallet-box">
+TDcPnC5umY37gwnqmjuYHvBxUnZKJqvAJ6
 </div>
 
-<div class="card">
-<h3>Curtidas</h3>
-<p>Engajamento real</p>
-<div class="price">A partir de $3</div>
-<a class="btn" href="https://wa.me/916232773902?text=Quero%20comprar%20curtidas">Comprar</a>
+<p><b>Network:</b> TRC20</p>
+
+<button onclick="confirmPayment()">
+Confirmar Pagamento via WhatsApp
+</button>
+
 </div>
 
-</section>
+</div>
 
-<footer>
-© 2026 SMM Premium - Todos os direitos reservados
-</footer>
+<div class="footer">
+© 2026 SMM Premium Panel | Suporte WhatsApp: +916232773902
+</div>
+
+<script>
+function order(){
+alert("Pedido enviado! Faça o pagamento na seção Wallet.");
+}
+
+function confirmPayment(){
+window.open("https://wa.me/916232773902?text=Enviei%20pagamento%20USDT%20TRC20","_blank");
+}
+</script>
 
 </body>
 </html>
